@@ -154,6 +154,13 @@ button:active { opacity:.8; }
   <h1>Mein Periodenkalender 🌸</h1>
   <p class="subtitle">Dein persönlicher Überblick</p>
 
+  
+  <!-- Buttons direkt nach dem persönlichen Überblick -->
+  <div class="actions" style="margin-top:0; margin-bottom:18px;">
+    <button class="primary" onclick="openCalendar()">+ Periode eingeben</button>
+    <button class="secondary" onclick="showChart()">Grafik anzeigen</button>
+  </div>
+
   <div class="card">
     <div class="muted">Letzter Periodenstart</div>
     <h2 id="lastStart">Noch kein Datum gespeichert</h2>
@@ -185,10 +192,6 @@ button:active { opacity:.8; }
     <div id="periodList"></div>
   </div>
 
-  <div class="actions">
-    <button class="primary" onclick="openCalendar()">+ Periode eingeben</button>
-    <button class="secondary" onclick="showChart()">Grafik anzeigen</button>
-  </div>
 </section>
 
 <section id="calendarScreen" class="screen">
